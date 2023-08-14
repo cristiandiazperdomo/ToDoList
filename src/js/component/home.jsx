@@ -57,9 +57,13 @@ const Home = () => {
 					)}
 				</ul>
 				{ taskCounter > 0 
-					&& 	<ul className="list-group w-100 border-top-0 rounded-0">
-							<li className="list-group-item border-top-0 rounded-0">{taskCounter} items left</li>
-						</ul>}
+				 	? <ul className="list-group w-100 border-top-0 rounded-0">
+						<li className="list-group-item border-top-0 rounded-0">{taskCounter} items left</li>
+					</ul>
+					: <ul className="list-group w-100 border-top-0 rounded-0">
+						<li className="list-group-item border-top-0 rounded-0">No hay tareas, añadir tareas</li>
+					</ul>
+				}
 			</div>
 		</div>
 	);
