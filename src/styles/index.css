@@ -10,3 +10,9 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+html,
+body,
+#app{
+    height: 100%;
+}
